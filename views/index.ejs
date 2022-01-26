@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gemology Binar</title>
+    <meta charSet="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <meta name="next-head-count" content="6" />
+    <link rel="preload" href="css/index.css" as="style" />
+    <link rel="stylesheet" href="css/index.css" data-n-g="" /><noscript data-n-css=""></noscript>
+
+    <link rel="icon" type="image/png" href="assets/favicon_io/favicon.ico"/>
+<!-- <link rel="icon" type="image/png" href="https://example.com/favicon.png"/> -->
+
+
+</head>
+
+<body>
+    <div id="app">
+        <div>
+            <div>
+                <div class="header">
+                    <div class="container">
+                        <nav class="navbar navbar-expand-md navbar-dark">
+                            <div class="container">
+                                <h4 class="text-orange">Gemology</h4>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <div class="container">
+                                        <ul class="navbar-nav mr-auto justify-content-center">
+                                            <li class="nav-item active">
+                                                <a class="nav-link" href="#home">
+                                                    <h6 class="text-white">Home</h6> <span
+                                                        class="sr-only">(current)</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#game">
+                                                    <h6 class="text-white">Games</h6>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#feature">
+                                                    <h6 class="text-white">Features</h6>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#requirements">
+                                                    <h6 class="text-white">Requirements</h6>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="/dashboard">
+                                                    <h6 class="text-white">Dashboard</h6>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="/suwit">
+                                                    <h6 class="text-white">Suwit</h6>
+                                                </a>
+                                            </li>
+
+                                        </ul>
+
+                                    </div>
+                                    <ul class="navbar-nav mr-auto navbar-expand-sm">
+                                        <li class="nav-item">
+                                            <a class="nav-link">
+                                                <h6 class="text-white">Register</h6>
+                                            </a></li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/login">
+                                                <h6 class="text-white">Login</h6>
+                                            </a></li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <section class="section hero" id="home">
+                    <div class="container-col justify-content-between container">
+                        <div class="displayRow row"></div>
+                        <div class="row">
+                            <div class="rowCenter col-md-8 col-lg-10 col-xl-12">
+                                <div class="title text-center">
+                                    <% if(typeof msg !== 'undefined') { %>
+                                        <h1><%= msg %></h1>
+                                     <% } %>                                    <h1 class="display-1 text-white mb-4"><b>PLAY TRADISIONAL</b></h1>
+                                    <h5 class="text-white mb-4">Experience new tradisional game play</h5><a
+                                        class="btn-play btn btn-secondary">PLAY NOW</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="displayRow col-md-8 col-lg-10 col-xl-12">
+                                <div class="title text-center mb-5">
+                                    <p class="text-white">THE STORY</p><a class="fas fa-chevron-down btn-arrow"
+                                        href="#the-game"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section the-game" id="game">
+
+
+                    <div class="container-row container">
+                        <div class="row">
+                            <div class="align-self-center col-lg-4">
+                                <div class="title mb-5">
+                                    <h6 class="text-white">What so special?</h6>
+                                    <h1 class="display-4 text-white"><b>THE GAMES</b></h1>
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+
+                                <section class="slider">
+                                    <!-- Slideshow container -->
+                                    <div class="slideshow-container">
+
+                                        <!-- Full-width images with number and caption text -->
+                                        <div class="mySlides ">
+                                            <div class="numbertext">1 / 6</div>
+                                            <img class= "image" src="./img/background-slide-4.avif" >
+                                        </div>
+
+                                        <div class="mySlides ">
+                                            <div class="numbertext">2 / 6</div>
+                                            <img class="image" src="./img/piramid.jpg" >
+                                        </div>
+
+                                  
+                                        <div class="mySlides ">
+                                            <div class="numbertext">4 / 6</div>
+                                            <img class="image" src="./img/main-bg.jpg" >
+                                        </div>
+                                        <div class="mySlides ">
+                                            <div class="numbertext">5 / 6</div>
+                                            <img class="image" src="./img/features.jpg" >
+                                        </div>
+                                        <div class="mySlides ">
+                                            <div class="numbertext">6 / 6</div>
+                                            <img class="image" src="./img/requirements.png" >
+                                        </div>
+
+                                        <!-- Next and previous buttons -->
+                                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                    </div>
+                                    <br>
+
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section feature" id="feature">
+                    <div class="container-row bg-small container">
+                        <div class="row">
+                            <div class="align-self-center col-lg-6"></div>
+                            <div class="col-lg-6">
+                                <div class="title mb-5">
+                                    <h6 class="text-white">What so special?</h6>
+                                    <h1 class="display-4 text-white"><b>FEATURES</b></h1>
+                                </div>
+                                <div class="feature-item">
+                                    <h5 class="text-orange">TRADISIONAL GAMES</h5>
+                                    <p class="text-white">if you miss your childhood, we provide many tradisional games
+                                        here</p>
+                                </div>
+                                <div class="feature-item">
+                                    <h5 class="text-orange">GAME SUIT</h5>
+                                </div>
+                                <div class="feature-item pb-0">
+                                    <h5 class="text-orange">TBD</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section requirement" id="requirements">
+                    <div class="container-row bg-small container">
+                        <div class="row">
+                            <div class="align-self-center col-lg-6">
+                                <div class="title mb-5">
+                                    <h6 class="text-white">Can my computer run this game?</h6>
+                                    <h1 class="display-4 text-white"><b>SYSTEM REQUIREMENTS</b></h1>
+                                </div>
+                            </div>
+                            <div class="align-self-center col-lg-6">
+                                <table class="bg-50 table table-bordered">
+                                    <tbody class="text-white">
+                                        <tr>
+                                            <td>
+                                                <h5 class="text-orange">OS:</h5>
+                                                <h6>Windows 7 64-bit only</h6>
+                                                <h6>(No OSX support at this time)</h6><br />
+                                            </td>
+                                            <td>
+                                                <h5 class="text-orange">PROCESSOR:</h5>
+                                                <h6>Intel Core 2 Duo @ 2.4 GHZ or</h6>
+                                                <h6>AMD Athlon X2 @ 2.8 GHZ</h6><br />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <h5 class="text-orange">MEMORY:</h5>
+                                                <h6>4 GB RAM</h6><br />
+                                            </td>
+                                            <td>
+                                                <h5 class="text-orange">STORAGE:</h5>
+                                                <h6>8 GB available space</h6><br /><br />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colSpan="2">
+                                                <h5 class="text-orange">GRAPHICS:</h5>
+                                                <h6>NVIDIA GeForce GTX 660 2GB or</h6>
+                                                <h6>AMD Radeon HD 7850 2GB DirectX11 (Shader Model 5)</h6><br />
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section top-score" id="">
+                    <div class="container-row container">
+                        <div class="row">
+                            <div class="align-self-center col-lg-4">
+                                <div class="title mb-5 topscore-center">
+                                    <h1 class="display-4 text-white"><b>TOP SCORES</b></h1><button
+                                        class="btn-play btn btn-secondary">see more</button>
+                                </div>
+                            </div>
+                            <div class="col-lg-2"></div>
+                            <div class="col-lg-6">
+                                <div class=" d-flex flex-column align-items-center">
+                                    <div class="testimoni testi1">
+                                        <div class="testi-header">
+                                            <div class="avatar avatar-testi1"></div>
+                                            <div class="nama-testimoni">
+                                                <h6 class="text-orange">Evan Lathi</h6>
+                                                <h6 class="text-abu">PC Gamer</h6>
+                                            </div>
+                                            <div><svg width="30" height="15" viewBox="0 0 19 15" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path opacity="0.3"
+                                                        d="M18.3981 2.41449C17.7231 2.70013 17.0072 2.88765 16.2741 2.97084C17.0365 2.53297 17.623 1.84099 17.899 1.01526C17.1731 1.42694 16.3789 1.71699 15.5508 1.87286C14.8519 1.15947 13.8744 0.755389 12.8519 0.757085C10.8105 0.757085 9.15361 2.33909 9.15361 4.29061C9.15361 4.5679 9.18627 4.83816 9.25021 5.09623C6.17639 4.94862 3.45216 3.54236 1.62787 1.404C1.30934 1.92529 1.12764 2.53297 1.12764 3.18076C1.12764 4.40623 1.78024 5.48805 2.77231 6.12188C2.18494 6.10468 1.61046 5.95309 1.09706 5.67983V5.7249C1.09706 7.43659 2.37189 8.86495 4.06278 9.19027C3.5182 9.3312 2.94722 9.35187 2.39305 9.25072C2.86384 10.6549 4.22998 11.6764 5.8475 11.7061C4.5821 12.6524 2.98781 13.2184 1.25483 13.2184C0.960153 13.2181 0.66574 13.2015 0.373047 13.1689C2.00943 14.1713 3.95365 14.7571 6.04185 14.7571C12.8438 14.7571 16.5627 9.37118 16.5627 4.70056C16.5627 4.54779 16.5627 4.39502 16.5513 4.24335C17.2749 3.74295 17.8998 3.12372 18.3969 2.41449H18.3981Z"
+                                                        fill="white"></path>
+                                                </svg></div>
+                                        </div>
+                                        <h6 class="text-white">&quot;One of my gaming highlights of the year&quot;</h6>
+                                        <h6 class="text-abu">October 18, 2018</h6>
+                                    </div>
+                                    <div class="testimoni testi2">
+                                        <div class="testi-header">
+                                            <div class="avatar avatar-testi2"></div>
+                                            <div class="nama-testimoni">
+                                                <h6 class="text-orange">Jada Griffin</h6>
+                                                <h6 class="text-abu">Nerdreactor</h6>
+                                            </div>
+                                            <div><svg width="30" height="15" viewBox="0 0 19 15" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path opacity="0.3"
+                                                        d="M18.3981 2.41449C17.7231 2.70013 17.0072 2.88765 16.2741 2.97084C17.0365 2.53297 17.623 1.84099 17.899 1.01526C17.1731 1.42694 16.3789 1.71699 15.5508 1.87286C14.8519 1.15947 13.8744 0.755389 12.8519 0.757085C10.8105 0.757085 9.15361 2.33909 9.15361 4.29061C9.15361 4.5679 9.18627 4.83816 9.25021 5.09623C6.17639 4.94862 3.45216 3.54236 1.62787 1.404C1.30934 1.92529 1.12764 2.53297 1.12764 3.18076C1.12764 4.40623 1.78024 5.48805 2.77231 6.12188C2.18494 6.10468 1.61046 5.95309 1.09706 5.67983V5.7249C1.09706 7.43659 2.37189 8.86495 4.06278 9.19027C3.5182 9.3312 2.94722 9.35187 2.39305 9.25072C2.86384 10.6549 4.22998 11.6764 5.8475 11.7061C4.5821 12.6524 2.98781 13.2184 1.25483 13.2184C0.960153 13.2181 0.66574 13.2015 0.373047 13.1689C2.00943 14.1713 3.95365 14.7571 6.04185 14.7571C12.8438 14.7571 16.5627 9.37118 16.5627 4.70056C16.5627 4.54779 16.5627 4.39502 16.5513 4.24335C17.2749 3.74295 17.8998 3.12372 18.3969 2.41449H18.3981Z"
+                                                        fill="white"></path>
+                                                </svg></div>
+                                        </div>
+                                        <h6 class="text-white">&quot;The next big thing in the world of streaming and
+                                            survival games.&quot;</h6>
+                                        <h6 class="text-abu">December 21, 2018</h6>
+                                    </div>
+                                    <div class="testimoni testi3">
+                                        <div class="testi-header">
+                                            <div class="avatar avatar-testi3"></div>
+                                            <div class="nama-testimoni">
+                                                <h6 class="text-orange">Aaroon Williams</h6>
+                                                <h6 class="text-abu">Uproxx</h6>
+                                            </div>
+                                            <div><svg width="30" height="15" viewBox="0 0 19 15" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path opacity="0.3"
+                                                        d="M18.3981 2.41449C17.7231 2.70013 17.0072 2.88765 16.2741 2.97084C17.0365 2.53297 17.623 1.84099 17.899 1.01526C17.1731 1.42694 16.3789 1.71699 15.5508 1.87286C14.8519 1.15947 13.8744 0.755389 12.8519 0.757085C10.8105 0.757085 9.15361 2.33909 9.15361 4.29061C9.15361 4.5679 9.18627 4.83816 9.25021 5.09623C6.17639 4.94862 3.45216 3.54236 1.62787 1.404C1.30934 1.92529 1.12764 2.53297 1.12764 3.18076C1.12764 4.40623 1.78024 5.48805 2.77231 6.12188C2.18494 6.10468 1.61046 5.95309 1.09706 5.67983V5.7249C1.09706 7.43659 2.37189 8.86495 4.06278 9.19027C3.5182 9.3312 2.94722 9.35187 2.39305 9.25072C2.86384 10.6549 4.22998 11.6764 5.8475 11.7061C4.5821 12.6524 2.98781 13.2184 1.25483 13.2184C0.960153 13.2181 0.66574 13.2015 0.373047 13.1689C2.00943 14.1713 3.95365 14.7571 6.04185 14.7571C12.8438 14.7571 16.5627 9.37118 16.5627 4.70056C16.5627 4.54779 16.5627 4.39502 16.5513 4.24335C17.2749 3.74295 17.8998 3.12372 18.3969 2.41449H18.3981Z"
+                                                        fill="white"></path>
+                                                </svg></div>
+                                        </div>
+                                        <h6 class="text-white">&quot;Snoop Dogg Playing The Wildy Entertaining SOS is
+                                            Ridiculous.&quot;</h6>
+                                        <h6 class="text-abu">December 24, 2018</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section newsletter" id="">
+                    <div class="container-row container">
+                        <div class="row">
+                            <div class="col-lg-6"></div>
+                            <div class="col-lg-6">
+                                <div class="title mb-5">
+                                    <h6 class="text-white">Want to stay in touch?</h6>
+                                    <h1 class="display-2 text-white"><b>NEWSLETTER SUBSCRIBE</b></h1>
+                                    <p class="text-white">In order to start receiving our news all you have to do is
+                                        enter your email address. Everything else will no taken care of by us. We sill
+                                        send you emails containing information about game. We don't spam.</p>
+                                </div>
+                                <h6 class="text-orange">Your email address</h6>
+                                <div class="input-group">
+                                    <div class="input-group-append"></div><input type="text"
+                                        placeholder="fauziharuna@gmail.com" class="input-style form-control" /><button
+                                        class="btn-play btn btn-secondary">Subscribe now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <section>
+                        <div class="bg-small container">
+                            <div class="social-media-wrap">
+                                <div class="social-logo">
+                                    <h4>LOGO</h4>
+                                </div>
+                                <div class="social-icons">
+                                    <div class="social-icon-link facebook" aria-label="Facebook"><i
+                                            class="fab fa-facebook-f"></i></div>
+                                    <div class="social-icon-link instagram" aria-label="Instagram"><i
+                                            class="fab fa-instagram"></i></div>
+                                    <div class="social-icon-link youtube" aria-label="Youtube"><i
+                                            class="fab fa-youtube"></i></div>
+                                    <div class="social-icon-link twitter" aria-label="Twitter"><i
+                                            class="fab fa-twitter"></i></div>
+                                    <div class="social-icon-link twitter" aria-label="LinkedIn"><i
+                                            class="fab fa-linkedin"></i></div>
+                                </div>
+                            </div>
+                            <div class="copyright"><small class="website-rights">© Binar 2021, Inc. All Rights
+                                    Reserved</small></div>
+                        </div>
+                    </section>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script src="js/carousel.js"></script>
+    <script src="js/jquery.js">
+    </script>
+    <script src="js/script.js">
+    </script>
+</body>
+
+</html>

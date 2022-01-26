@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Suwit Challenge Binar</title>
+    <meta charSet="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <meta name="next-head-count" content="6" />
+    <link rel="preload" href="css/suwit.css" as="style" />
+    <link rel="stylesheet" href="css/suwit.css" data-n-g="" /><noscript data-n-css=""></noscript>
+
+    <link rel="icon" type="image/png" href="assets/favicon_io/favicon.ico" />
+    <!-- <link rel="icon" type="image/png" href="https://example.com/favicon.png"/> -->
+
+
+</head>
+
+<body>
+    <div id="app">
+        <div>
+            <div>
+                <div class="header">
+                    
+                </div>
+           
+                <section class="section suwit" id="home">
+                    <div class="body-suwit">
+
+                        <div class="suwit-game">
+                            <div class="suwit-row">
+                                <div class="suwit-column"></div>
+                                <div class="suwit-column-mid"><b>
+                                        <h1 class="text-abu2"> Suwit Game</h1>
+                                    </b></div>
+                                <div class="suwit-column"></div>
+                            </div>
+                            <div class="suwit-row">
+                                <div class="suwit-column">
+                                    <p class="suwit-h1" style="text-transform:capitalize"><u>User</u></p>
+                                </div>
+                                <div class="suwit-column-mid">
+                                    <div class="suwit-h3 text-abu" style="font-size:14px">You are given chance to
+                                        choose between rock, paper, or scissor. </div>
+                                </div>
+                                <div class="suwit-column">
+                                    <p class="suwit-h1"><u>Computer</u></p>
+                                </div>
+                            </div>
+                            <div class="suwit-row">
+                                <div class="suwit-column"><img id="batu" src="./img/batu.png" alt=""
+                                        class="tangan-disable" data-item="batu"></div>
+                                <div class="suwit-column-mid"></div>
+                                <div class="suwit-column"><img id="comp-batu" src="./img/batu.png" alt=""
+                                        class="tangan-disable-comp" data-item="batu"/></div>
+                            </div>
+                            <div class="suwit-row">
+                                <div class="suwit-column"><img id="kertas" src="./img/kertas.png" alt=""
+                                        class="tangan-disable" data-item="kertas"/></div>
+                                <div class="suwit-column-mid">
+                                    <div id="versus-h1" class="result-begin"></div>
+                                </div>
+                                <div class="suwit-column"><img id="comp-kertas" src="./img/kertas.png" alt=""
+                                        class="tangan-disable-comp" data-item="kertas"/></div>
+                            </div>
+                            <div class="suwit-row">
+                                <div class="suwit-column"><img id="gunting" src="./img/gunting.png" alt=""
+                                        class="tangan-disable" data-item="gunting"/></div>
+                                <div class="suwit-column-mid">
+                                    <div class="btn-arrow-2">
+                                        <img src="./img/refresh.png" class="image" id="refresh-btn">
+                                       <!-- <i class="fas fa-refresh"></i> -->
+                                    </div>
+                                    <!-- <div class="btn-arrow-2">
+                                        <h3 style="font-size:18px">Start Game</h3><a class="fas fa-chevron-down"></a>
+                                    </div> -->
+                                </div>
+                                <div class="suwit-column"><img id="comp-gunting" src="./img/gunting.png" alt=""
+                                        class="tangan-disable-comp" data-item="gunting" /></div>
+                            </div>
+                            <div class="suwit-row-2">
+                         
+                                    <h3 id="text-result">HASIL</h3>
+                                </div>
+                            <div class="suwit-row suwit-border-top">
+                                <div class="suwit-column">
+                                    <p class="suwit-h3 " style="text-transform:capitalize">User Score :</p>
+                                    <div id="player_score">0</div>
+                                </div>
+                                <div class="suwit-column-mid">
+                                    <p class="suwit-h3">Draw:</p>
+                                    <div id="draw_score">0</div>
+                                </div>
+                                <div class="suwit-column">
+                                    <p class="suwit-h3">Computer Score:</p>
+                                    <div id="comp_score">0</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </div>
+    <script src="js/game.js"></script>
+    <script src="js/jquery.js">
+    </script>
+    <script src="js/script.js">
+    </script>
+</body>
+
+</html>
