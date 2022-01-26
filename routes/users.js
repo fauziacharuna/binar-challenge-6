@@ -111,6 +111,11 @@ router.put("/biodata/:id", async function (req, res) {
 })
 router.delete("/biodata/:id", async function (req, res) {
     const userId = req.params.id;
+    const userHistoryDelete = await userHistoryModel.destroy({
+        where: {
+            user_game_id: userId
+        }
+    })
     const userBiodataDelete = await userGameModel.destroy({
         where: {
             user_game_id: userId
